@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <variable
+            name="model"
+            type="manddev.com.testavito.viewmodel.GhibliViewModel" />
+    </data>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/detail_text_title"
+            android:text="@{model.getTitle(context)}"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Castle in the Sky"/>
+
+        <TextView
+            android:id="@+id/detail_text_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_default"
+            android:text="@{model.getDescription(context)}"
+            app:layout_constraintTop_toBottomOf="@id/detail_text_title"
+            tools:text="The orphan Sheeta inherited a mysterious crystal that links her to the mythical sky-kingdom of Laputa. With the help of resourceful Pazu and a rollicking band of sky pirates, she makes her way to the ruins of the once-great civilization. Sheeta and Pazu must outwit the evil Muska, who plans to use Laputa's science to make himself ruler of the world." />
+
+        <TextView
+            android:id="@+id/detail_text_director"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_default"
+            android:text="@{model.getDirector(context)}"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text_description"
+            tools:text="Hayao Miyazaki" />
+
+        <TextView
+            android:id="@+id/detail_text_producer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_default"
+            android:text="@{model.getProducer(context)}"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text_director"
+            tools:text="Isao Takahata" />
+
+        <TextView
+            android:id="@+id/detail_text_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_default"
+            android:text="@{model.getReleaseDate(context)}"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text_producer"
+            tools:text="1986" />
+
+        <TextView
+            android:id="@+id/detail_text_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_default"
+            android:text="@{model.getScore(context)}"
+            app:layout_constraintTop_toBottomOf="@+id/detail_text_release_date"
+            tools:text="100" />
+    </android.support.constraint.ConstraintLayout>
+</layout>

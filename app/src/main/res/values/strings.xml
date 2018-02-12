@@ -1,9 +1,22 @@
 <resources>
     <string name="app_name">TestAvito</string>
 
+    <!-- Text Placeholder -->
+    <string name="placeholder_title">Titre : %s</string>
+    <string name="placeholder_score">Score : %s</string>
+    <string name="placeholder_description">Description : %s</string>
+    <string name="placeholder_director">Directeur : %s</string>
+    <string name="placeholder_producer">Producteur : %s</string>
+    <string name="placeholder_release_date">Date de sortie : %s</string>
+
+
     <!-- Default Text-->
     <string name="default_title">Empty Title</string>
     <string name="default_score">0</string>
+    <string name="default_description">Empty Description</string>
+    <string name="default_director">Jean Dupont</string>
+    <string name="default_producer">John Doe</string>
+    <string name="default_release_date">1970–01–01</string>
 
     <!-- Accessibility -->
     <string name="content_description">Le film %1$s a obtenu un score de %2$s</string>

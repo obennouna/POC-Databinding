@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements MainFragment.List
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_simple);
 
         if (savedInstanceState == null) {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
@@ -24,6 +24,6 @@ public class MainActivity extends AppCompatActivity implements MainFragment.List
 
     @Override
     public void onClickItem(GhibliViewModel model) {
-
+        startActivity(DetailActivity.navigate(this, model));
     }
 }

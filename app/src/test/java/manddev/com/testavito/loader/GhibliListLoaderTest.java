@@ -10,6 +10,11 @@ import static org.junit.Assert.assertEquals;
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
 
+/**
+ * In this state the Loader is not testable, but we should normally test it and make it testable (no time for this)
+ */
+
+// FIXME We need to refactor the loader in order to be testable
 public class GhibliListLoaderTest {
     @Test
     public void addition_isCorrect() throws Exception {

@@ -13,8 +13,11 @@
     <!-- I didn't use CardView because we don't have any action beside the click so no need (for me) -->
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_default"
+        android:layout_marginBottom="@dimen/spacing_default">
 
+        <!-- The Content Description is in the Adapter -->
         <ImageView
             android:id="@+id/ghibli_image"
             android:layout_width="wrap_content"
@@ -25,26 +28,21 @@
 
         <TextView
             android:id="@+id/ghibli_title"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/spacing_default"
             android:text="@{model.getTitle(context)}"
-            app:layout_constraintBottom_toBottomOf="@+id/ghibli_image"
-            app:layout_constraintEnd_toStartOf="@+id/ghibli_score"
             app:layout_constraintStart_toEndOf="@+id/ghibli_image"
             app:layout_constraintTop_toTopOf="@+id/ghibli_image"
-            app:layout_constraintVertical_bias="0.505"
             tools:text="Castle in the sky" />
 
         <TextView
             android:id="@+id/ghibli_score"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/spacing_small"
             android:text="@{model.getScore(context)}"
-            app:layout_constraintBottom_toBottomOf="@+id/ghibli_title"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/ghibli_title"
+            app:layout_constraintBottom_toBottomOf="@+id/ghibli_image"
+            app:layout_constraintStart_toStartOf="@+id/ghibli_title"
             tools:text="95" />
     </android.support.constraint.ConstraintLayout>
 </layout>

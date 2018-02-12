@@ -3,10 +3,13 @@ package manddev.com.testavito.adapter;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.PointerIcon;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.squareup.picasso.MemoryPolicy;
+import com.squareup.picasso.NetworkPolicy;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -71,8 +74,13 @@ public class GhibliAdapter extends RecyclerView.Adapter<GhibliAdapter.ViewHolder
 
             // Sorry
             mRandomPictureView = root.findViewById(R.id.ghibli_image);
+            String url = context.getString(R.string.random_picture_api);
             Picasso.with(context)
-                    .load(context.getString(R.string.random_picture_api))
+                    .invalidate(url);
+            Picasso.with(context)
+                    .load(url)
+                    .networkPolicy(NetworkPolicy.NO_CACHE).
+                    memoryPolicy(MemoryPolicy.NO_CACHE)
                     .resize(200, 200)
                     .centerCrop()
                     .into(mRandomPictureView);
