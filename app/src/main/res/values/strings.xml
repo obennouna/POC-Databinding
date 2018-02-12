@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TestAvito</string>
+
+    <!-- Default Text-->
+    <string name="default_title">Empty Title</string>
+    <string name="default_score">0</string>
+
+    <!-- Accessibility -->
+    <string name="content_description">Le film %1$s a obtenu un score de %2$s</string>
+
+    <!-- API -->
+    <string name="ghibli_api">https://ghibliapi.herokuapp.com/films</string>
+    <string name="random_picture_api">https://picsum.photos/200/200/?random</string>
 </resources>
