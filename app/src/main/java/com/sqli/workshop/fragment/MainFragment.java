@@ -1,4 +1,4 @@
-package manddev.com.testavito.fragment;
+package com.sqli.workshop.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -15,12 +15,12 @@ import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.adapter.GhibliAdapter;
-import manddev.com.testavito.bo.GhibliItem;
-import manddev.com.testavito.business.GhibliBusinessService;
-import manddev.com.testavito.loader.GhibliListLoader;
-import manddev.com.testavito.viewmodel.GhibliViewModel;
+import com.sqli.workshop.R;
+import com.sqli.workshop.adapter.GhibliAdapter;
+import com.sqli.workshop.bo.GhibliItem;
+import com.sqli.workshop.business.GhibliBusinessService;
+import com.sqli.workshop.loader.GhibliListLoader;
+import com.sqli.workshop.viewmodel.GhibliViewModel;
 
 /**
  * @author Metrozal on 12/02/2018.

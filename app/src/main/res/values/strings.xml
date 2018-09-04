@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TestAvito</string>
+    <string name="app_name">Workshop</string>
 
     <!-- Text Placeholder -->
     <string name="placeholder_title">Titre : %s</string>

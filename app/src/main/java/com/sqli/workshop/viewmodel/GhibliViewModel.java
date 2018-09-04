@@ -1,11 +1,11 @@
-package manddev.com.testavito.viewmodel;
+package com.sqli.workshop.viewmodel;
 
 import android.content.Context;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.bo.GhibliItem;
+import com.sqli.workshop.R;
+import com.sqli.workshop.bo.GhibliItem;
 
 /**
  * @author Metrozal on 12/02/2018.

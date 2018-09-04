@@ -1,4 +1,4 @@
-package manddev.com.testavito.fragment;
+package com.sqli.workshop.fragment;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -7,9 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.databinding.FragmentDetailBinding;
-import manddev.com.testavito.viewmodel.GhibliViewModel;
+import com.sqli.workshop.R;
+import com.sqli.workshop.databinding.FragmentDetailBinding;
+import com.sqli.workshop.viewmodel.GhibliViewModel;
 
 /**
  * @author Metrozal on 12/02/2018.
@@ -33,8 +33,7 @@ public class DetailFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup root, Bundle bundle) {
-        mBinding = DataBindingUtil.inflate(
-                inflater, R.layout.fragment_detail, root, false);
+        mBinding = DataBindingUtil.inflate(                inflater, R.layout.fragment_detail, root, false);
         return mBinding.getRoot();
     }
 

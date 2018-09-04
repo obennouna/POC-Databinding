@@ -1,12 +1,12 @@
-package manddev.com.testavito.viewmodel;
+package com.sqli.workshop.viewmodel;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.bo.GhibliItem;
+import com.sqli.workshop.R;
+import com.sqli.workshop.bo.GhibliItem;
 
 import static org.junit.Assert.assertEquals;
 

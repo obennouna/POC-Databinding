@@ -1,4 +1,4 @@
-package manddev.com.testavito.bo;
+package com.sqli.workshop.bo;
 
 import android.os.Parcel;
 import android.os.Parcelable;

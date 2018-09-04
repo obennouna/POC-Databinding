@@ -1,4 +1,4 @@
-package manddev.com.testavito.adapter;
+package com.sqli.workshop.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -14,9 +14,9 @@ import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.databinding.ItemGhibliBinding;
-import manddev.com.testavito.viewmodel.GhibliViewModel;
+import com.sqli.workshop.R;
+import com.sqli.workshop.databinding.ItemGhibliBinding;
+import com.sqli.workshop.viewmodel.GhibliViewModel;
 
 /**
  * @author Metrozal on 12/02/2018.

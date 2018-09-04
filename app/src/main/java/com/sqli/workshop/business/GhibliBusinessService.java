@@ -1,9 +1,9 @@
-package manddev.com.testavito.business;
+package com.sqli.workshop.business;
+
+import com.sqli.workshop.bo.GhibliItem;
+import com.sqli.workshop.viewmodel.GhibliViewModel;
 
 import java.util.ArrayList;
-
-import manddev.com.testavito.bo.GhibliItem;
-import manddev.com.testavito.viewmodel.GhibliViewModel;
 
 /**
  * @author Metrozal on 12/02/2018.

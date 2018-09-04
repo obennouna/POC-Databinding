@@ -1,16 +1,16 @@
-package manddev.com.testavito.loader;
+package com.sqli.workshop.loader;
 
 import android.content.Context;
 import android.support.v4.content.AsyncTaskLoader;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.sqli.workshop.R;
+import com.sqli.workshop.bo.GhibliItem;
 
 import java.io.IOException;
 import java.util.ArrayList;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.bo.GhibliItem;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

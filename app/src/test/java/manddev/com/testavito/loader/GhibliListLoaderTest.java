@@ -1,4 +1,4 @@
-package manddev.com.testavito.loader;
+package com.sqli.workshop.loader;
 
 import org.junit.Test;
 

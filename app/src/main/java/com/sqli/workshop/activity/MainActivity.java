@@ -1,12 +1,12 @@
-package manddev.com.testavito.activity;
+package com.sqli.workshop.activity;
 
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.fragment.MainFragment;
-import manddev.com.testavito.viewmodel.GhibliViewModel;
+import com.sqli.workshop.R;
+import com.sqli.workshop.fragment.MainFragment;
+import com.sqli.workshop.viewmodel.GhibliViewModel;
 
 public class MainActivity extends AppCompatActivity implements MainFragment.Listener {
 

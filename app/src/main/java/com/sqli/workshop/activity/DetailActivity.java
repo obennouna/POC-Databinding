@@ -1,4 +1,4 @@
-package manddev.com.testavito.activity;
+package com.sqli.workshop.activity;
 
 import android.content.Context;
 import android.content.Intent;
@@ -6,9 +6,9 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
-import manddev.com.testavito.R;
-import manddev.com.testavito.fragment.DetailFragment;
-import manddev.com.testavito.viewmodel.GhibliViewModel;
+import com.sqli.workshop.R;
+import com.sqli.workshop.fragment.DetailFragment;
+import com.sqli.workshop.viewmodel.GhibliViewModel;
 
 /**
  * @author Metrozal on 12/02/2018.

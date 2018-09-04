@@ -7,7 +7,7 @@
 
         <variable
             name="model"
-            type="manddev.com.testavito.viewmodel.GhibliViewModel" />
+            type="com.sqli.workshop.viewmodel.GhibliViewModel" />
     </data>
 
     <!-- I didn't use CardView because we don't have any action beside the click so no need (for me) -->
