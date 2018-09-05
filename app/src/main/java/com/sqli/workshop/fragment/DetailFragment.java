@@ -33,7 +33,7 @@ public class DetailFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup root, Bundle bundle) {
-        mBinding = DataBindingUtil.inflate(                inflater, R.layout.fragment_detail, root, false);
+        mBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_detail, root, false);
         return mBinding.getRoot();
     }
 

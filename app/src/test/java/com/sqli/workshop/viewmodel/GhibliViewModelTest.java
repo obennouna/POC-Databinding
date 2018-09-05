@@ -1,12 +1,13 @@
 package com.sqli.workshop.viewmodel;
 
+import com.sqli.workshop.R;
+import com.sqli.workshop.bo.GhibliItem;
+import com.sqli.workshop.viewmodel.GhibliViewModel;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.RuntimeEnvironment;
-
-import com.sqli.workshop.R;
-import com.sqli.workshop.bo.GhibliItem;
 
 import static org.junit.Assert.assertEquals;
 
@@ -24,10 +25,10 @@ public class GhibliViewModelTest {
         GhibliViewModel model = new GhibliViewModel(null);
 
         // When
-        final String result = model.getTitle(RuntimeEnvironment.systemContext);
+        final String result = model.getTitle(RuntimeEnvironment.application);
 
         // Then
-        assertEquals(result, RuntimeEnvironment.systemContext.getString(R.string.default_title));
+        assertEquals(result, RuntimeEnvironment.application.getString(R.string.default_title));
     }
 
     @Test
@@ -36,10 +37,10 @@ public class GhibliViewModelTest {
         GhibliViewModel model = new GhibliViewModel(null);
 
         // When
-        final String result = model.getScore(RuntimeEnvironment.systemContext);
+        final String result = model.getScore(RuntimeEnvironment.application);
 
         // Then
-        assertEquals(result, RuntimeEnvironment.systemContext.getString(R.string.default_score));
+        assertEquals(result, RuntimeEnvironment.application.getString(R.string.default_score));
     }
     //endregion
 
@@ -51,10 +52,10 @@ public class GhibliViewModelTest {
         GhibliViewModel model = new GhibliViewModel(item);
 
         // When
-        final String result = model.getTitle(RuntimeEnvironment.systemContext);
+        final String result = model.getTitle(RuntimeEnvironment.application);
 
         // Then
-        assertEquals(result, "This is my first title");
+        assertEquals(result, "Titre : This is my first title");
     }
 
     @Test
@@ -65,10 +66,10 @@ public class GhibliViewModelTest {
         GhibliViewModel model = new GhibliViewModel(item);
 
         // When
-        final String result = model.getScore(RuntimeEnvironment.systemContext);
+        final String result = model.getScore(RuntimeEnvironment.application);
 
         // Then
-        assertEquals(result, "100");
+        assertEquals(result, "Score : 100");
     }
 
     // TODO Continue unit tests on every ViewModel method
